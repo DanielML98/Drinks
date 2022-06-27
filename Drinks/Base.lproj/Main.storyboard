@@ -217,7 +217,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsh-bX-VNp">
-                                                <rect key="frame" x="16" y="810" width="382" height="38"/>
+                                                <rect key="frame" x="16" y="839" width="382" height="38"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Add Drink">
@@ -238,7 +238,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WYl-el-vTm">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WYl-el-vTm">
                                                 <rect key="frame" x="66" y="550" width="282" height="227"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="231" id="jhC-o6-slH"/>
@@ -246,6 +246,14 @@
                                                 </constraints>
                                                 <imageReference key="image" image="camera.on.rectangle" catalog="system" symbolScale="small"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wut-41-twR">
+                                                <rect key="frame" x="161.5" y="795" width="91.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Add Photo"/>
+                                                <connections>
+                                                    <action selector="didTapAddPhoto:" destination="AWC-5C-4J3" eventType="touchUpInside" id="Qvn-s2-5nu"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -254,6 +262,7 @@
                                             <constraint firstAttribute="trailing" secondItem="zT1-r8-1o2" secondAttribute="trailing" constant="16" id="3Ne-hO-r9I"/>
                                             <constraint firstItem="rUf-Ho-tv6" firstAttribute="top" secondItem="Q25-sB-GGp" secondAttribute="bottom" constant="32" id="6Kp-aa-yqh"/>
                                             <constraint firstItem="uXU-w8-UuO" firstAttribute="leading" secondItem="EfT-05-H24" secondAttribute="leading" constant="16" id="9lL-yD-5ZN"/>
+                                            <constraint firstItem="Wut-41-twR" firstAttribute="centerX" secondItem="EfT-05-H24" secondAttribute="centerX" id="EPQ-8f-Xtc"/>
                                             <constraint firstItem="Q75-pV-77l" firstAttribute="top" secondItem="lpe-ls-XCF" secondAttribute="bottom" constant="32" id="Et6-Km-5dj"/>
                                             <constraint firstAttribute="trailing" secondItem="rUf-Ho-tv6" secondAttribute="trailing" constant="16" id="FBP-mi-cot"/>
                                             <constraint firstItem="WYl-el-vTm" firstAttribute="top" secondItem="zT1-r8-1o2" secondAttribute="bottom" constant="26" id="IWp-at-5JF"/>
@@ -264,7 +273,8 @@
                                             <constraint firstItem="zT1-r8-1o2" firstAttribute="top" secondItem="Q75-pV-77l" secondAttribute="bottom" constant="8" id="V7C-q9-iz9"/>
                                             <constraint firstItem="lpe-ls-XCF" firstAttribute="leading" secondItem="EfT-05-H24" secondAttribute="leading" constant="16" id="WoQ-fI-z14"/>
                                             <constraint firstItem="uXU-w8-UuO" firstAttribute="top" secondItem="EfT-05-H24" secondAttribute="top" constant="32" id="Xb4-tk-75Q"/>
-                                            <constraint firstItem="Tsh-bX-VNp" firstAttribute="top" secondItem="WYl-el-vTm" secondAttribute="bottom" constant="31" id="cR8-wc-RYT"/>
+                                            <constraint firstItem="Tsh-bX-VNp" firstAttribute="top" secondItem="WYl-el-vTm" secondAttribute="bottom" constant="60" id="cR8-wc-RYT"/>
+                                            <constraint firstItem="Wut-41-twR" firstAttribute="top" secondItem="WYl-el-vTm" secondAttribute="bottom" constant="16" id="cw2-Lx-CZS"/>
                                             <constraint firstAttribute="trailing" secondItem="WYl-el-vTm" secondAttribute="trailing" constant="66" id="fZ0-D2-8sL"/>
                                             <constraint firstAttribute="trailing" secondItem="Q75-pV-77l" secondAttribute="trailing" constant="16" id="hFV-F7-etS"/>
                                             <constraint firstAttribute="trailing" secondItem="uXU-w8-UuO" secondAttribute="trailing" constant="16" id="hNG-x5-11l"/>
